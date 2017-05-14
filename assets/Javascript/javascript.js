@@ -5,7 +5,7 @@ var youWin = 0;
 var youLose = 0;
 var guessesLeft = 10;
 //array to capture user input
-var guessedLetters = []
+var guessedLetters = [];
 
 
 // When the user presses a key, it will run the following function...
@@ -18,28 +18,26 @@ document.onkeyup = function(event) {
     var computerGuess = psychicLetters[Math.floor(Math.random() * psychicLetters.length)];
 
     //point added if guess correct
-    if (userGuess === computerGuess); {
+    if (userGuess === computerGuess) {
       youWin++;
       guessesLeft = 9;
     }
 
     //if it doesnt match you lose a guess
     else {
-      guessesLeft --;
-
+      guessesLeft--;
     }
 
     if (guessesLeft === 0); {
       youLose++;
       guessesLeft = 9;
-
     }
 
     var html = "<p>Guess what letter I'm thinking of: </p>" +
       "<p>Wins: " + youWin + "</p>" +
       "<p>Loses: " + youLose + "</p>" +
       "<p>Guesses Remaining: " + guessesLeft + "</p>" +
-      "<p>Guessed Letter: " + guessedLetters.join(', ') + "<p>" ;
+      "<p>Guessed Letter: " + guessedLetters.join(', ') + "<p>";
 
       document.getElementById("results").innerHTML = html;
   }
