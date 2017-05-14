@@ -37,7 +37,7 @@ document.onkeyup = function(event) {
       "<p>Wins: " + youWin + "</p>" +
       "<p>Loses: " + youLose + "</p>" +
       "<p>Guesses Remaining: " + guessesLeft + "</p>" +
-      "<p>Guessed Letter: " + guessedLetters.join(', ') + "<p>";
+      "<p>Guessed Letter: " + guessedLetters.join(",") + "<p>";
 
       document.getElementById("results").innerHTML = html;
   }
