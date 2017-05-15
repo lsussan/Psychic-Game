@@ -1,4 +1,4 @@
-var psychicLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+var psychicLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 // Variables for tracking our wins, losses and ties. They begin at 0.
 var youWin = 0;
@@ -20,17 +20,17 @@ document.onkeyup = function(event) {
     //point added if guess correct
     if (userGuess === computerGuess) {
       youWin++;
-      guessesLeft = 9;
+      //guessesLeft = 9;
     }
 
-    //if it doesnt match you lose a guess
+    //if it doesnt  match you lose a guess
     else {
       guessesLeft--;
     }
 
     if (guessesLeft === 0); {
       youLose++;
-      guessesLeft = 9;
+      //guessesLeft = 9;
     }
 
     var html = "<p>Guess what letter I'm thinking of: </p>" +

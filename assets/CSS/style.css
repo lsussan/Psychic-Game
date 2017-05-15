@@ -1,5 +1,14 @@
 .container {
+  background: Black;
+}
+
+.jumbotron {
 font-style: italic;
 text-align: center;
 color: dodgerblue;
+}
+
+#image2 {
+margin: auto;
+padding: 20px;
 }
